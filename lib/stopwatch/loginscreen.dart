@@ -89,7 +89,7 @@ class _LoginFormScreenState extends State<LoginFormScreen> {
               },
             ),
 
-            const SizedBox(height: 20),
+            // const SizedBox(height: 20),
 
             ElevatedButton(
               onPressed: _validate,
