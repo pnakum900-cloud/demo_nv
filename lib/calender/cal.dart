@@ -16,7 +16,7 @@ class _calexState extends State<calex> {
     });
   }
 
-  Future<void> _selectDate(BuildContext context) async {
+  Future<void> pickDate() async {
     final DateTime? picked = await showDatePicker(
       context: context,
       initialDate: Date ?? DateTime.now(),
@@ -33,6 +33,26 @@ class _calexState extends State<calex> {
 
   @override
   Widget build(BuildContext context) {
-    return const Placeholder();
+    final text = Date == null?
+    'No date selected' : '${Date!.day}/${Date!.month}/${Date!.year}';     
+    return Scaffold(
+     body: Center(
+        child: Column(
+          mainAxisAlignment: MainAxisAlignment.center,
+          children: [
+            Text(text),
+            ElevatedButton(
+              onPressed: pickDate,
+              child: const Text('Pick a date'),
+            ),
+            ElevatedButton(
+              onPressed: setDateValue,
+              child: const Text('Submit'),
+            ),
+          ],
+        ),
+      )
+    );
+      
   }
 }
