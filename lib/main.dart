@@ -2,8 +2,9 @@
 // import 'package:demo_nv/stopwatch/loginscreen.dart';
 // import 'package:demo_nv/stopwatch/stopwatch.dart';
 // import 'package:demo_nv/checkbox/checkbox.dart';
-import 'package:demo_nv/slide/slide1.dart';
+// import 'package:demo_nv/slide/slide1.dart';
 // import 'package:demo_nv/stopwatch/stopwatch.dart';
+import 'package:demo_nv/calender/cal.dart';
 import 'package:flutter/material.dart';
 // import 'Calculator/calculator.dart';
 
@@ -27,7 +28,8 @@ class MyApp extends StatelessWidget {
       // home: StopWatchExample()
       // home: LoginFormScreen(),
       // home : checkboxx(),
-      home : SlideEx(),
+      // home : SlideEx(),
+      home: calex(),
     );
   }
 }
