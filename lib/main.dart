@@ -1,10 +1,13 @@
 // import 'package:demo_nv/Calculator/calculator.dart';
 // import 'package:demo_nv/stopwatch/loginscreen.dart';
 // import 'package:demo_nv/stopwatch/stopwatch.dart';
-import 'package:demo_nv/calender/cal.dart';
-import 'package:demo_nv/checkbox/checkbox.dart';
-import 'package:demo_nv/slide/slide1.dart';
+// import 'package:demo_nv/calender/cal.dart';
+// import 'package:demo_nv/checkbox/checkbox.dart';
+// import 'package:demo_nv/dropdown/dropdownex.dart';
+// import 'package:demo_nv/slide/slide1.dart';
 // import 'package:demo_nv/stopwatch/stopwatch.dart';
+// import 'package:demo_nv/register/registerform.dart';
+import 'package:demo_nv/firstdart/first.dart';
 import 'package:flutter/material.dart';
 // import 'Calculator/calculator.dart';
 
@@ -44,7 +47,10 @@ class MyApp extends StatelessWidget {
       // home: LoginFormScreen(),
       // home : checkboxx(),
       // home : SlideEx(),
-      home: calex(),
+      // home: calex(),
+      // home : registerex(),
+      // home: Dropex(),
+      home: FirstEx(),
     );
   }
 }
