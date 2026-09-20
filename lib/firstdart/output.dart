@@ -25,6 +25,47 @@ class OutputOFRegister extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(
         title: const Text("Registerd Data"),
+        actions: [
+          IconButton(
+            icon: const Icon(Icons.edit),
+            onPressed: (){
+              ScaffoldMessenger.of(context).showSnackBar(
+                const SnackBar(content: Text("Edit button pressed"),
+                ),
+              );
+            },
+          ),
+          IconButton(
+            onPressed: (){
+              showDialog(context: context, 
+              builder: (context){
+                return AlertDialog(
+                  title: const Text("Delete data"),
+                  content: const Text("Are you sure to delete data"),
+                  actions: [
+                    TextButton(
+                      onPressed: (){
+                        Navigator.pop(context);
+                    }, 
+                    child: const Text("Cancle")
+                    ),
+                    TextButton(
+                      onPressed:(){
+                        Navigator.pop(context);
+                        ScaffoldMessenger.of(context).showSnackBar(
+                          const SnackBar(content: Text("Data Deleted")
+                          ),
+                        );
+                      } , 
+                      child: const Text("Delete"),
+                      ),
+                  ],
+                );
+              });
+          }, 
+          icon: const Icon(Icons.delete),
+          ),
+        ],
         centerTitle: true,
       ),
       body: Padding(padding: const EdgeInsets.all(20),
