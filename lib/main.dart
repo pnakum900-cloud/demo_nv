@@ -8,7 +8,7 @@
 // import 'package:demo_nv/stopwatch/stopwatch.dart';
 // import 'package:demo_nv/register/registerform.dart';
 // import 'package:demo_nv/firstdart/first.dart';
-import 'package:demo_nv/register/imagecontrol.dart';
+// import 'package:demo_nv/register/imagecontrol.dart';
 import 'package:demo_nv/resources/slideview.dart';
 import 'package:flutter/material.dart';
 // import 'Calculator/calculator.dart';
